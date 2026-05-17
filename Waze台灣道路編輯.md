@@ -115,6 +115,8 @@
 
 ## 國道 (National Highways)
 
+![TWHW1|690x690, 20%](./圖片/Waze台灣道路編輯/TWHW1.svg)
+
 路牌為帶有梅花造型。Waze因應支援多種裝置排版問題，故編名名稱如下：
 
 | 道路編號 (Alternate addresses, Street) | 完整名稱 | Waze 顯示名稱 (Address, Street) | 順樁方向 (0km >>> 10km) | 逆樁方向 (10km >>> 0km) | 收費 道路 | 重機 行駛 | 備註 |
