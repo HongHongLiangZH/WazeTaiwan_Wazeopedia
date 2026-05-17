@@ -1,6 +1,6 @@
 # WazeTaiwan_Wazeopedia
 
-**事先聲明**
+## 事先聲明
 本內容最終會發佈在 Waze discuss 裡的 Taiwan Wazeopedia，故排版會以 Waze discuss 支援的 Markdown、BBCode、HTML 格式來寫。
 顯示內容會與一般 Markdown 格式有差別。
 
