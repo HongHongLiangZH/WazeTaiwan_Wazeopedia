@@ -194,7 +194,7 @@ Waze編名名稱如下：
 「台」+「數字」+「繁體中文天干地支（支線用）」+「線」
 例如：「台1線」、「台14甲線」、「台39線」
 
-## 市道 ([六都](#台灣六都)) / 縣道 ([非六都](#台灣非六都))  (City and Country Highways)
+## 市道 ([六都](https://www.waze.com/discuss/t/topic/377487#p-2276587-h-1)) / 縣道 ([非六都](https://www.waze.com/discuss/t/topic/377487#p-2276587-h-2)) (City and Country Highways)
 
 | 市道/縣道主線 | 市道/縣道支線 |
 | :---: | :---: |
