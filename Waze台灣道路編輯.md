@@ -21,32 +21,32 @@
 
 所以我們不能一刀切，把國道總歸納在「Freeway 高速公路」，把快速道路歸納在「Freeway 高速公路」。需要靈活調整，保障重機使用者的導航權益。
 
-![1. 特定車種的導航錯誤（如重機）](圖片\Waze台灣道路編輯\Gemini_Generated_Image_py0d7dpy0d7dpy0d.png)
+![1. 特定車種的導航錯誤（如重機）](./圖片/Waze台灣道路編輯/Gemini_Generated_Image_py0d7dpy0d7dpy0d.png)
 
 ## 2. 路網階層出現斷層：
 在台北市，若僅依循市區道路的一般分類，圖資上可能只剩下「Freeway 高速公路」、「Major Highway 主要公路」、「Street 街道」與「Narrow Street 狹窄街道」。這種缺乏「Minor Highway 次要公路」或「Primary Street 主要街道」過渡層級的路網斷層，會破壞 Waze 演算法的階層化引導邏輯，嚴重影響中長途導航路線的計算效率與合理性。
 
-![2. 路網階層出現斷層](圖片\Waze台灣道路編輯\Gemini_Generated_Image_mglsbgmglsbgmgls.png)
+![2. 路網階層出現斷層](./圖片/Waze台灣道路編輯/Gemini_Generated_Image_mglsbgmglsbgmgls.png)
 
 ## 3. 道路容量與路線權重（Routing Penalty）不匹配：
 行政編制無法完全反映實體的路幅寬度與疏導能力。例如：部分無中央分隔線的雙向雙車道，若因編制被高估為「Minor Highway 次要公路」，可能導入過多車流；反之，具備雙向四車道以上的高容量道路若僅被設定為基礎的「Street 街道」，系統會降低其路線權重，無法有效發揮該道路應有的分流潛力，造成路網效能的浪費。
 
-![3. 道路容量與路線權重（Routing Penalty）不匹配](圖片\Waze台灣道路編輯\Gemini_Generated_Image_5de02o5de02o5de0.png)
+![3. 道路容量與路線權重（Routing Penalty）不匹配](./圖片/Waze台灣道路編輯/Gemini_Generated_Image_5de02o5de02o5de0.png)
 
 ## 4. 誘發不當的穿越性車流（Through-traffic / Rat-running）：
 台灣特有的住商混合都市發展，使得許多高密度住宅區內的巷弄極為狹窄、會車困難。若將這些狹小巷道統一劃設為標準的「Street 街道」，演算法可能會為了尋求最短路徑，將外部的穿越性車流引導進入社區。這類道路應視實體路況降級為「Narrow Street 較窄街道」，以增加路線權重懲罰，避免影響社區交通安全與寧適性。
 
-![誘發不當的穿越性車流（Through-traffic / Rat-running）](圖片\Waze台灣道路編輯\Gemini_Generated_Image_vjlbhhvjlbhhvjlb.png)
+![誘發不當的穿越性車流（Through-traffic / Rat-running）](圖片/Waze台灣道路編輯/Gemini_Generated_Image_vjlbhhvjlbhhvjlb.png)
 
 ## 5. 偏鄉與山區產業道路的「圖資陷阱」：
 台灣許多山區的「鄉道」或「區道」，在行政編制上雖然屬於正規道路，但實體路況往往極度狹窄、坡度陡峭，甚至缺乏護欄與照明（如部分產業道路）。若依循行政編制給予較高的道路層級，Waze 演算法極容易為了「抄捷徑」，將不熟悉路況的遊客引導至危險的山區單線道。此類道路必須降級為「Street 街道」或「Narrow Street 較窄街道」或設定為越野/未鋪裝道路，以增加路線權重懲罰。
 
-![5. 偏鄉與山區產業道路的「圖資陷阱」](圖片\Waze台灣道路編輯\Gemini_Generated_Image_6n4d7f6n4d7f6n4d.png)
+![5. 偏鄉與山區產業道路的「圖資陷阱」](圖片/Waze台灣道路編輯/Gemini_Generated_Image_6n4d7f6n4d7f6n4d.png)
 
  ## 6. 台灣特有的「快慢車道實體分隔」設計：
 台灣許多都會區主幹道（如台中台灣大道、高雄中山路）設有實體分隔島在圖資繪製上，若將這兩種車道視為同等層級，會導致導航無法精確判斷車輛應該走在哪個車道才能順利轉彎。通常需要將「左側車道」設定為較高層級以承擔直行與過境車流，並將「右側車道」降級（或搭配轉向限制），確保系統能提早引導駕駛切換車道以準備匯出或右轉，並且避免駕駛者在左右車道來回切換。
 
-![台灣特有的「快慢車道實體分隔」設計](圖片\Waze台灣道路編輯\Gemini_Generated_Image_c4l8ehc4l8ehc4l8~2.jpg)
+![台灣特有的「快慢車道實體分隔」設計](圖片/Waze台灣道路編輯/Gemini_Generated_Image_c4l8ehc4l8ehc4l8~2.jpg)
 
 ***
 
